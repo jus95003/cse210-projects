@@ -57,6 +57,11 @@ class Program
             modifier = "";
         }
 
+        if (gpa == 100)
+        {
+            modifier = "";
+        }
+
         Console.WriteLine($"Your letter grade is: {letter}{modifier}");
 
         if (gpa >= 70)
