@@ -27,7 +27,7 @@ class Program
         {
             letter = "D";
         }
-        else (gpa < 60)
+        else
         {
             letter = "F";
         }
@@ -54,7 +54,7 @@ class Program
 
         if (letter == "A" && modifier == "+")
         {
-            modifier == "";
+            modifier = "";
         }
 
         Console.WriteLine($"Your letter grade is: {letter}{modifier}");
