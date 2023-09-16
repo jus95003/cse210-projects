@@ -7,23 +7,23 @@ class Program
         Console.WriteLine("Please enter your grade percentage.");
         string userInput = Console.ReadLine();
 
-        int gpa = int.Parse(userInput);
+        int gradePercent = int.Parse(userInput);
 
         string letter = "";
 
-        if (gpa >= 90)
+        if (gradePercent >= 90)
         {
             letter = "A";
         }
-        else if (gpa < 90 && gpa >= 80)
+        else if (gradePercent < 90 && gradePercent >= 80)
         {
             letter = "B";
         }
-        else if (gpa < 80 && gpa >= 70)
+        else if (gradePercent < 80 && gradePercent >= 70)
         {
             letter = "C";
         }
-        else if (gpa < 70 && gpa >= 60)
+        else if (gradePercent < 70 && gradePercent >= 60)
         {
             letter = "D";
         }
@@ -34,11 +34,11 @@ class Program
 
         string modifier = "";
 
-        if ((gpa % 10) >= 7)
+        if ((gradePercent % 10) >= 7)
         {
             modifier = "+";
         }
-        else if ((gpa % 10) < 3)
+        else if ((gradePercent % 10) < 3)
         {
             modifier = "-";
         }
@@ -57,14 +57,14 @@ class Program
             modifier = "";
         }
 
-        if (gpa == 100)
+        if (gradePercent == 100)
         {
             modifier = "";
         }
 
         Console.WriteLine($"Your letter grade is: {letter}{modifier}");
 
-        if (gpa >= 70)
+        if (gradePercent >= 70)
         {
             Console.WriteLine("Congratulations on passing the class!");
         }
