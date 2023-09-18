@@ -18,7 +18,7 @@ class Program
             string userInput = Console.ReadLine();
             int guess = int.Parse(userInput);
             
-            int numberOfGuesses = 0;
+            int numberOfGuesses = 1;
             
             while (guess != number)
                 {
@@ -26,11 +26,17 @@ class Program
                     {
                         Console.WriteLine("Some guess. Lower.");
                         numberOfGuesses++;
+                        Console.WriteLine("What is your best guess?");
+                        userInput = Console.ReadLine();
+                        guess = int.Parse(userInput);
                     }
                     else
                     {
                         Console.WriteLine("Some guess. Higher.");
                         numberOfGuesses++;
+                        Console.WriteLine("What is your best guess?");
+                        userInput = Console.ReadLine();
+                        guess = int.Parse(userInput);
                     }
                 }
             
