@@ -41,9 +41,19 @@ class Program
 
             else if (_choice == "4" || _choice == "Save" || _choice == "save")
             {
-                Console.WriteLine("What is the filename?");
-                string _saveFileName = Console.ReadLine();
-                _journal.SaveJournal(_saveFileName);
+                Console.WriteLine("If you want to save to an existing JSON file,");
+                Console.WriteLine("load the existing JSON first or it will be overwritten.");
+                Console.WriteLine();
+                Console.WriteLine("Proceed with saving? (yes/no)");
+
+                string _decision = Console.ReadLine();
+
+                if (_decision == "yes")
+                {
+                    Console.WriteLine("What is the filename?");
+                    string _saveFileName = Console.ReadLine();
+                    _journal.SaveJournal(_saveFileName);
+                }
             }
 
             else
