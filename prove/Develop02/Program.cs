@@ -3,6 +3,18 @@ using System.Diagnostics.Contracts;
 
 class Program
 {
+    // The core of the program is exactly as the core requirements were laid out.
+    // My creative embellishment was to code in the ability to save a journal file as a JSON file.
+    // Due to the structure of the JSON file (beginning and ending with square brackets), I didn't
+    // have time to develop a solution to add entries to an existing JSON file without simply loading
+    // the file first to _entryList, adding the new entries to _entryList, and re-saving _entryList
+    // as a JSON. I had to add extra steps to cache any work done before the JSON is loaded, because
+    // normally _entryList is cleared before loading so that only the data from the save file is in
+    // _entryList after loading. One problem with this is if a user loads an existing JSON file
+    // multiple times, multiple copies of the save file data will be loaded into _entryList and
+    // that is a rabbit hole I don't have time to go down. There were probably a few places in the
+    // Journal class that I could have spun code blocks off into new classes, but I ran out of time. 
+
     static void Main(string[] args)
     {
         Journal _journal = new Journal();
