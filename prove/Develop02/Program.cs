@@ -12,7 +12,7 @@ class Program
     // _entryList after loading. One problem with this is if a user loads an existing JSON file
     // multiple times, multiple copies of the save file data will be loaded into _entryList and
     // that is a rabbit hole I don't have time to go down. There were probably a few places in the
-    // Journal class that I could have spun code blocks off into new classes, but I ran out of time. 
+    // Journal class where I could have spun off code blocks into new classes, but I ran out of time. 
 
     static void Main(string[] args)
     {
