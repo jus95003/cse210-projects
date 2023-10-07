@@ -92,6 +92,11 @@ public class Journal
 
                 _entryList.Add(_entry);
             }
+
+            foreach (Entry _entry in _cacheList)
+            {
+                _entryList.Add(_entry);
+            }
         }
     }
 
