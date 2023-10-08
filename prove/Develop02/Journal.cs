@@ -42,10 +42,6 @@ public class Journal
 
     public void LoadJournal(string _fileName)
     {
-        List<Entry> _cacheList = new List<Entry>();
-
-        _cacheList = _entryList;
-
         _entryList.Clear();
 
         string _nameOfFile = @_fileName;
@@ -69,11 +65,6 @@ public class Journal
 
                 _entryList.Add(_entry);
             }
-
-            foreach (Entry _entry in _cacheList)
-            {
-                _entryList.Add(_entry);
-            }
         }
 
         else
@@ -90,11 +81,6 @@ public class Journal
                 _entry._entryPrompt = parts[1];
                 _entry._entryText = parts[2];
 
-                _entryList.Add(_entry);
-            }
-
-            foreach (Entry _entry in _cacheList)
-            {
                 _entryList.Add(_entry);
             }
         }
