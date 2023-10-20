@@ -24,9 +24,9 @@ public class FractionWriter
         _denominator = denominator;
     }
 
-    public void GetNumerator()
+    public int GetNumerator()
     {
-        Console.WriteLine(_numerator);
+        return _numerator;
     }
 
     public void SetNumerator(int numerator)
@@ -34,9 +34,9 @@ public class FractionWriter
         _numerator = numerator;
     }
 
-    public void GetDenominator()
+    public int GetDenominator()
     {
-        Console.WriteLine(_denominator);
+        return _denominator;
     }
 
     public void SetDenominator(int denominator)
