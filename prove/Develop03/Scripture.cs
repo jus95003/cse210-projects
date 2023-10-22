@@ -95,7 +95,7 @@ public class Scripture
         return wordList;
     }
 
-    public void ModifyWords()
+    private void ModifyWords()
     {
         if (_difficulty == 4)
         {
