@@ -1,4 +1,3 @@
-using System.Reflection.Metadata.Ecma335;
 using System.Text.Json;
 public class Scripture
 {
@@ -9,7 +8,7 @@ public class Scripture
     private int _difficulty;
     private int _wordCounter = 0;
 
-    public Scripture(string reference, int difficulty)
+    public Scripture(string reference)
     {
         bool verseRange = reference.Contains('-');
 
@@ -27,8 +26,6 @@ public class Scripture
             _reference = new Reference(reference);
         }
 
-        _difficulty = difficulty;
-
         _verseList = this.LoadVerses();
 
         _verseText = this.BuildText();
@@ -44,6 +41,11 @@ public class Scripture
     public string GetReference()
     {
         return _reference.GetFullRef();
+    }
+
+    public void SetDifficulty(int difficulty)
+    {
+        _difficulty = difficulty;
     }
 
     private List<Verse> LoadVerses()
