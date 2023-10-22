@@ -2,6 +2,14 @@ using System.Runtime.InteropServices;
 
 class Program
 {
+    // The enhancements to my version of the scripture memorizer program are the following:
+    //
+    //  (1)     A whole lot of user entry validation. I've tried to make sure they can't enter non-sense inputs and break the program.
+    //
+    //  (2)     The prompt allows the user to choose from any verse or verses in the standard works.
+    //
+    //  (3)     The user can choose from 4 levels of difficulty when the words are hidden: Easy, Moderate, Hard, and Show-off.
+
     static void Main(string[] args)
     {
         Console.WriteLine();
