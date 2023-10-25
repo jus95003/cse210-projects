@@ -1,6 +1,6 @@
 # cse210-student-template
 
-Just another practice modification...
+Just another practice modification...and another test.
 
 This repository contains the starter code for many different projects. They are arranged as follows:
 
