@@ -27,24 +27,26 @@ public class Activity
 
     public void DisplayEndMessage()
     {
-        Console.WriteLine("Well done!!");
-        Console.WriteLine();
+        Console.Write("Well done!!  ");
 
         this.DisplaySpinner(5);
 
-        Console.WriteLine($"You have completed another {_activityDuration} seconds of the {_activityName}.");
         Console.WriteLine();
+        Console.WriteLine();
+        Console.Write($"You have completed another {_activityDuration} seconds of the {_activityName}.  ");
 
         this.DisplaySpinner(10);
     }
 
     protected void SetDuration()
     {
-        int durationValidate = 0;
+        int durationValidate;
 
-        while (durationValidate == 0)
+        do
         {
-            Console.Write("How long, in seconds, would you like for your session? ");
+            durationValidate = 1;
+
+            Console.Write("How long, in seconds, would you like for your session?  ");
 
             string durationChoice = Console.ReadLine();
 
@@ -54,15 +56,14 @@ public class Activity
                 {
                     durationValidate = 0;
                 }
-
-                else
-                {
-                    _activityDuration = Int32.Parse(durationChoice);
-
-                    durationValidate = 1;
-                }
             }
-        }
+
+            if (durationValidate == 1)
+            {
+                _activityDuration = Int32.Parse(durationChoice);
+            }
+
+        } while (durationValidate == 0);
     }
 
     protected void DisplayTimer(int seconds)

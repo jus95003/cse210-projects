@@ -22,10 +22,11 @@ class Program
                 Console.WriteLine("3. Start listing activity");
                 Console.WriteLine("4. Quit");
                 Console.WriteLine();
-                Console.WriteLine("Select a choice from the menu: ");
-                Console.WriteLine();
-
+                Console.Write("Select a choice from the menu:  ");
+                
                 string menuChoice = Console.ReadLine();
+
+                Console.WriteLine();
 
                 char menuChoiceChar = menuChoice[0];
 
