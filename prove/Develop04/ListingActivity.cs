@@ -1,6 +1,6 @@
 public class ListingActivity : Activity
 {
-    private string[] _randomPrompt = new string[5] {
+    private string[] _listingPrompt = new string[5] {
         "--- Who are people that you appreciate? ---",
         "--- What are personal strengths of yours? ---",
         "--- Who are people that you have helped this week? ---",
@@ -24,7 +24,7 @@ public class ListingActivity : Activity
         Console.WriteLine("List as many responses as you can to the following prompt:");
         Console.WriteLine();
 
-        Console.WriteLine(this.GetRandPrompt(_randomPrompt));
+        Console.WriteLine(this.GetRandPrompt(_listingPrompt));
 
         Console.WriteLine();
         Console.Write("You may begin in: ");

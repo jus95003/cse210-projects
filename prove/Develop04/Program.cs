@@ -13,14 +13,15 @@ class Program
 
             choice = 0;
 
-            while (choice < 1 || choice > 4)
+            while (choice < 1 || choice > 5)
             {
                 Console.WriteLine("Menu Options:");
                 Console.WriteLine();
                 Console.WriteLine("1. Start breathing activity");
                 Console.WriteLine("2. Start reflecting activity");
                 Console.WriteLine("3. Start listing activity");
-                Console.WriteLine("4. Quit");
+                Console.WriteLine("4. Start centering activity");
+                Console.WriteLine("5. Quit");
                 Console.WriteLine();
                 Console.Write("Select a choice from the menu:  ");
                 
@@ -62,10 +63,17 @@ class Program
                 listingActivity.RunListingActivity();
             }
 
+            else if (choice == 4)
+            {
+                CenteringActivity centeringActivity = new CenteringActivity();
+
+                centeringActivity.RunCenteringActivity();
+            }
+
             else
             {
                 return;
             }
-        } while(choice != 4);
+        } while(choice != 5);
     }
 }
