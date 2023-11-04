@@ -13,7 +13,7 @@ public class Activity
         _activityDescription = "";
     }
 
-    public void DisplayStartMessage()
+    protected void DisplayStartMessage()
     {
         Console.Clear();
         Console.WriteLine($"Welcome to the {_activityName}.");
@@ -29,7 +29,7 @@ public class Activity
         this.DisplaySpinner(5);
     }
 
-    public void DisplayEndMessage()
+    protected void DisplayEndMessage()
     {
         Console.Write("Well done!!  ");
 
@@ -42,7 +42,7 @@ public class Activity
         this.DisplaySpinner(10);
     }
 
-    protected void SetDuration()
+    private void SetDuration()
     {
         int durationValidate;
 
