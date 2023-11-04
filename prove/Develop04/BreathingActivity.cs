@@ -1,8 +1,5 @@
 public class BreathingActivity : Activity
 {
-    private string _breatheIn = "Breathe in... ";
-    private string _breatheOut = "Now breathe out... ";
-
     public BreathingActivity() : base()
     {
         _activityName = "Breathing Activity";
@@ -21,12 +18,12 @@ public class BreathingActivity : Activity
         {
             Console.WriteLine();
             Console.WriteLine();
-            Console.Write(_breatheIn);
+            Console.Write("Breathe in... ");
             this.DisplayTimer(5);
 
             Console.WriteLine();
             Console.WriteLine();
-            Console.Write(_breatheOut);
+            Console.Write("Now breathe out... ");
             this.DisplayTimer(5);
 
             currentTime = DateTime.Now;
