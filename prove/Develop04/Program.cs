@@ -3,10 +3,10 @@ using System.ComponentModel.Design;
 
 class Program
 {
-    // My effort to to show creativity and exceed the requirements was to add an additional mindfulness activity - the Centering Activity.
-    // It is set up the same way as the other activities. The user sees the activity name and description, and they are asked to input a
-    // duration for the activity. The activity then displays various ASCII art of the Savior for the user to focus on. I chose not to make
-    // the art selection random because I want the user to see as many pieces as possible during the activity. 
+    // My effort to show creativity and exceed the requirements was to add an additional mindfulness activity - the Centering Activity.
+    // It is set up the same way as the other activities. The user sees the activity name and description, and they are asked to input
+    // a duration for the activity. The activity then displays various ASCII art of the Savior for the user to focus on. I chose not to
+    // make the art selection random because I want the user to see as many pieces as possible during the activity.
 
     static void Main(string[] args)
     {
